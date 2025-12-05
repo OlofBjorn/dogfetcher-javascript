@@ -1,9 +1,13 @@
-const dog = 'breeds';
-const url = `https://dog.ceo/api/${dog}/image`;
-const ugg = `https://dog.ceo/api/breeds/image/random`;
+const dog = 'triceratops';
+const url = `https://dog.ceo/breeds/${dog}/image`;
+const ugg = `https://dog.ceo/api/breeds/image/${dog}/n02107142_13677.jpg`;
+const ogg = `https://dinosaur-facts-api.shultzlab.com/dinosaurs`;
+const egg = `https://dinoapi.brunosouzadev.com/api/dinosaurs/agathaumas`;
+const agg = `https://vikiru.github.io/restasaurus/api/`
 
 
-fetch(ugg)
+
+fetch(ogg)
     .then((response) => {
 
         console.log(response)
@@ -11,4 +15,8 @@ fetch(ugg)
     })
     .then((json) => {
         console.log(json);
+        const dinosaur = json.filter(item => {
+           return item.Name === "Agathaumas"}
+        )
+        console.log(dinosaur);
     });
