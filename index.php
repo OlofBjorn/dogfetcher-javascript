@@ -11,7 +11,11 @@
         <button id ="Mainbutton" onclick="getDino()">
             Get Dino Fact!
         </button>
-        <p id="container">
+        <p id="dinoname">
+
+        </p>
+        <br>
+        <p id ="dinoinfo">
 
         </p>
 </html>

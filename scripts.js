@@ -22,8 +22,8 @@ function getDino(){
             console.log(dinosaur)
             
             my_html = dinosaur
-            document.getElementById("container").innerHTML = "Dino Fact!";
-            
+            document.getElementById("dinoname").innerHTML = my_html;
+            document.getElementById("dinoinfo").innerHTML = "Dino Fact!";
         });
     }
         
