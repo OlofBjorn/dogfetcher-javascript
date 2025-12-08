@@ -8,7 +8,7 @@
     </head>
     <h1>
     </h1>
-        <button id ="Mainbutton" onclick="fetch(url)">
+        <button id ="Mainbutton" onclick="getDino()">
             Get Dino Fact!
         </button>
         <p id="container">

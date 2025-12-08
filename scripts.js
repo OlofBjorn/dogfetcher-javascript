@@ -5,6 +5,8 @@ var my_html = '';
 
 var button = document.getElementById('MainButton')
 
+button?.addEventListener('click', getDino);
+
 function getDino(){
     fetch(url)
         .then((response) => {
@@ -24,4 +26,4 @@ function getDino(){
             
         });
     }
-        button.addEventListener('click', getDino);
+        
