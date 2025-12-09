@@ -1,11 +1,12 @@
 const url = `https://dinosaur-facts-api.shultzlab.com/dinosaurs`;
+const url1 = `https://dinosaur-facts-api.shultzlab.com/dinosaurs/random`;
 
 var container = document.getElementById('container');
 var my_html = '';
 
 var button = document.getElementById('MainButton')
 
-button?.addEventListener('click', getDino);
+button?.addEventListener('click', getDinoAlt);
 
 function getDino(){
     fetch(url)
@@ -21,9 +22,23 @@ function getDino(){
             )
             console.log(dinosaur)
             
-            my_html = dinosaur
-            document.getElementById("dinoname").innerHTML = my_html;
+            const dinosaurArray = Array.from(dinosaur)
+            document.getElementById("dinoname").innerHTML = dinosaurArray["Description"]
             document.getElementById("dinoinfo").innerHTML = "Dino Fact!";
+        });
+    }
+
+    function getDinoAlt(){
+    fetch(url1)
+        .then((response) => {
+
+            console.log(response)
+            return response.json();
+        })
+        .then((json) => {
+            console.log(json);
+            document.getElementById("dinoname").innerHTML = json.Name
+            document.getElementById("dinoinfo").innerHTML = json.Description;
         });
     }
         
