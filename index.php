@@ -19,4 +19,12 @@
         <p id ="dinoinfo" class="dinotext">
 
         </p>
+        <link id = "dinolink" class="dinolink" href= >
+        
+        </link>
+        
+        <p id ="dinowarning" class="dinotext">
+
+        </p>
+
 </html>

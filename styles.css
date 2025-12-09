@@ -2,6 +2,7 @@
     --bgcolour: rgb(207, 207, 186);
     --textcolour: black;
     --bordercolour: rgb(41, 42, 35);
+    --buttoncolour: rgb(255, 252, 235);
     --mainfont: "Modern No. 20";
 }
 
@@ -14,14 +15,20 @@
 h1{
     display:flex;
     justify-content: center;
+    margin: 1%;
+    padding: 1%;
 }
 
 .dinotext{
     display:flex;
     justify-content: center;
+    margin: 1%;
+    padding: 1%;
 }
 
 .button{
     display:block;
     margin:auto;
+    padding: 1%;
+    background-color: var(--buttoncolour);
 }

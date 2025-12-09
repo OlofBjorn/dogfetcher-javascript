@@ -8,6 +8,8 @@ var button = document.getElementById('MainButton')
 
 button?.addEventListener('click', getDinoAlt);
 
+
+
 function getDino(){
     fetch(url)
         .then((response) => {
@@ -28,7 +30,7 @@ function getDino(){
         });
     }
 
-    function getDinoAlt(){
+function getDinoAlt(){
     fetch(url1)
         .then((response) => {
 
@@ -39,6 +41,24 @@ function getDino(){
             console.log(json);
             document.getElementById("dinoname").innerHTML = json.Name
             document.getElementById("dinoinfo").innerHTML = json.Description;
+
+            console.log(json.Name)
+            
+            const dinosaurLink = document.getElementById("dinolink");
+            document.getElementById("dinolink")[0].setAttribute("href", "https://en.wikipedia.org/wiki/"+json.Name);
+
+
+            if(json.Name === "Laosaurus"){
+                document.getElementById("dinowarning").innerHTML = "Laosaurus!"
+            }
+            else{
+                document.getElementById("dinowarning").innerHTML = ""
+            }
+            if(json.Name === "Linhevenato"){
+                console.log(json.Name);
+                getDinoAlt()
+                return;
+            }
         });
     }
         
