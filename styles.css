@@ -10,3 +10,18 @@
     color: var(--textcolour);
     font-family: var(--mainfont);
 }
+
+h1{
+    display:flex;
+    justify-content: center;
+}
+
+.dinotext{
+    display:flex;
+    justify-content: center;
+}
+
+.button{
+    display:block;
+    margin:auto;
+}

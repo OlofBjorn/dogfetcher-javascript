@@ -8,15 +8,15 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <h1>
+        DINOFETCHER
     </h1>
-        <button id ="Mainbutton" onclick="getDinoAlt()">
+        <button id ="Mainbutton" onclick="getDinoAlt()" class="button">
             Get Dino Fact!
         </button>
-        <p id="dinoname">
+        <p id="dinoname" class="dinotext">
 
         </p>
-        <br>
-        <p id ="dinoinfo">
+        <p id ="dinoinfo" class="dinotext">
 
         </p>
 </html>
