@@ -1,0 +1,12 @@
+:root{
+    --bgcolour: rgb(207, 207, 186);
+    --textcolour: black;
+    --bordercolour: rgb(41, 42, 35);
+    --mainfont: "Modern No. 20";
+}
+
+*{
+    background-color: var(--bgcolour);
+    color: var(--textcolour);
+    font-family: var(--mainfont);
+}

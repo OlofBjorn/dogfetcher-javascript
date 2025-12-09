@@ -5,6 +5,7 @@
 
             }
         </script>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <h1>
     </h1>
