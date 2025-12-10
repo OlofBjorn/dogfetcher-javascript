@@ -1,42 +1,5 @@
 const url = `https://dinosaur-facts-api.shultzlab.com/dinosaurs`;
 
-var container = document.getElementById('container');
-var my_html = '';
-
-var button = document.getElementById('MainButton')
-
-button?.addEventListener('click', getDinoAlt);
-
-
-
-function getDino(){
-    fetch(url)
-        .then((response) => {
-
-            console.log(response)
-            return response.json();
-        })
-        .then((json) => {
-            console.log(json);
-            const dinoSearch = document.getElementById("dinoSearch").value;
-            const dinosaur = json.filter(item => {
-            return item.Name === dinoSearch}
-            )
-            console.log(dinosaur)
-
-            if(json.Description.length == 0){
-                document.getElementById("dinoname").innerHTML = "ERROR!"
-                document.getElementById("dinoinfo").innerHTML = "ERROR!"
-            }
-            else{
-                const dinosaurArray = Array.from(dinosaur)
-                document.getElementById("dinoname").innerHTML = dinosaurArray["Description"]
-                document.getElementById("dinoinfo").innerHTML = "Dino Fact!";
-            }
-            
-
-        });
-    }
 
 function getDinoAlt(){
     fetch(url+"/random  ")
