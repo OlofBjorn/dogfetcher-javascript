@@ -7,7 +7,7 @@
 }
 
 *{
-    background-color: var(--bgcolour);
+    background-color: var(--bordercolour);
     color: var(--textcolour);
     font-family: var(--mainfont);
 }
@@ -15,20 +15,58 @@
 h1{
     display:flex;
     justify-content: center;
-    margin: 1%;
-    padding: 1%;
+    margin: 5%;
+    padding: 5%;
+    background-color: var(--bgcolour);
+    font-size:xxx-large;
 }
 
 .dinotext{
     display:flex;
     justify-content: center;
-    margin: 1%;
-    padding: 1%;
+    margin: 5%;
+    padding: 5%;
+    width: 75%;  
+    margin-left:7.5%;
+    background-color: var(--bgcolour);
+    font-size:xx-large;
+}
+
+#dinoname{
+    font-size: xx-large;
+    height:2vh;
 }
 
 .button{
     display:block;
     margin:auto;
-    padding: 1%;
+    padding: 5%;
+    font-size:xx-large;
     background-color: var(--buttoncolour);
 }
+
+@media(min-width:1200px){
+    h1{
+        font-size:x-large;
+        margin: 2%;
+        padding: 2%;
+    }
+
+    .button{
+        font-size:x-large;
+        padding:2%;
+    }
+
+    .dinotext{
+        margin:2%;
+        padding:2%;
+        margin-left:11%;
+        font-size: large;
+    }
+
+    #dinoname{
+        font-size:x-large;
+    }
+
+}
+

@@ -10,9 +10,11 @@
     <h1>
         DINOFETCHER
     </h1>
-        <button id ="Mainbutton" onclick="getDinoAlt()" class="button">
-            Get Dino Fact!
-        </button>
+        <div>
+            <button id ="Mainbutton" onclick="getDinoAlt()" class="button">
+                Get Random Dino!
+            </button>
+        </div>
         <p id="dinoname" class="dinotext">
 
         </p>
@@ -23,7 +25,7 @@
         
         </link>
         
-        <p id ="dinowarning" class="dinotext">
+        <p id ="dinowarning" class="">
 
         </p>
 

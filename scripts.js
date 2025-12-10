@@ -31,7 +31,7 @@ function getDino(){
     }
 
 function getDinoAlt(){
-    fetch(url1)
+    fetch(url+"/random  ")
         .then((response) => {
 
             console.log(response)
@@ -44,8 +44,7 @@ function getDinoAlt(){
 
             console.log(json.Name)
             
-            const dinosaurLink = document.getElementById("dinolink");
-            document.getElementById("dinolink")[0].setAttribute("href", "https://en.wikipedia.org/wiki/"+json.Name);
+            
 
 
             if(json.Name === "Laosaurus"){
