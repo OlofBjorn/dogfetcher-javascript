@@ -1,5 +1,4 @@
 const url = `https://dinosaur-facts-api.shultzlab.com/dinosaurs`;
-const url1 = `https://dinosaur-facts-api.shultzlab.com/dinosaurs/random`;
 
 var container = document.getElementById('container');
 var my_html = '';
@@ -19,14 +18,23 @@ function getDino(){
         })
         .then((json) => {
             console.log(json);
+            const dinoSearch = document.getElementById("dinoSearch").value;
             const dinosaur = json.filter(item => {
-            return item.Name === "Agathaumas"}
+            return item.Name === dinoSearch}
             )
             console.log(dinosaur)
+
+            if(json.Description.length == 0){
+                document.getElementById("dinoname").innerHTML = "ERROR!"
+                document.getElementById("dinoinfo").innerHTML = "ERROR!"
+            }
+            else{
+                const dinosaurArray = Array.from(dinosaur)
+                document.getElementById("dinoname").innerHTML = dinosaurArray["Description"]
+                document.getElementById("dinoinfo").innerHTML = "Dino Fact!";
+            }
             
-            const dinosaurArray = Array.from(dinosaur)
-            document.getElementById("dinoname").innerHTML = dinosaurArray["Description"]
-            document.getElementById("dinoinfo").innerHTML = "Dino Fact!";
+
         });
     }
 
