@@ -14,21 +14,7 @@ function getDinoAlt(){
             document.getElementById("dinoinfo").innerHTML = json.Description;
 
             console.log(json.Name)
-            
-            
 
-
-            if(json.Name === "Laosaurus"){
-                document.getElementById("dinowarning").innerHTML = "Laosaurus!"
-            }
-            else{
-                document.getElementById("dinowarning").innerHTML = ""
-            }
-            if(json.Name === "Linhevenato"){
-                console.log(json.Name);
-                getDinoAlt()
-                return;
-            }
         });
     }
         

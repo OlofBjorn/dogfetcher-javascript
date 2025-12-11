@@ -10,10 +10,7 @@
     <h1>
         DINOFETCHER
     </h1>
-        
-
         <div class="buttoncontainer">
-
             <button id ="Mainbutton" onclick="getDinoAlt()" class="button">
                 Get Random Dino!
             </button>
